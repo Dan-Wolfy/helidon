@@ -1,4 +1,4 @@
-#Helidon Metric Collection and Tracing
+# Helidon Metric Collection and Tracing
 
 ## Before You Begin
 
