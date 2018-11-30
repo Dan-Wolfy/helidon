@@ -97,7 +97,7 @@ curl -H 'Accept: application/json' -X GET http://localhost:8080/metrics/ | json_
 curl -H 'Accept: text/plain' -X GET http://localhost:8080/metrics/
 ```
 
-###Downloading and Running Prometheus on your Local Machine
+### Downloading and Running Prometheus on your Local Machine
 
 What use are metrics without a tool to consume them? 
 
