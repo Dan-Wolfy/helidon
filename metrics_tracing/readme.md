@@ -24,10 +24,10 @@ The following list shows the minimum versions:
 
 ## Download the Application 
 
-1. Begin by downloading the quickstart-se application from our Github repo (https://github.com/barchetta/helidon-se-codeone-2018): 
+1. Begin by downloading the quickstart-se application:
 
 ```
-git clone https://github.com/barchetta/helidon-se-codeone-2018.git
+git clone https://github.com/mickeyboxell/helidon
 ```
 
 2. Change into the helidon-se-codeone-2018 directory: 
