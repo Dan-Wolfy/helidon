@@ -25,7 +25,8 @@ spec:
   selector:
     app: ${project.artifactId}
   ports:
-  - port: 8080
+  - nodePort: 31000
+    port: 8080
     targetPort: 8080
     name: http
 ---
@@ -43,7 +44,7 @@ spec:
     spec:
       containers:
       - name: ${project.artifactId}
-        image: ${project.artifactId}
+        image: iad.ocir.io/cloudnative-devrel/helidon/${project.artifactId}:latest
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
