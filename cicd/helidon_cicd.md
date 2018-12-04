@@ -34,11 +34,11 @@ The following list shows the minimum versions:
 
 4. Under **Select a user from the dropdown to begin** make sure your Wercker user is selected. Under **Select SCM** choose GitHub from the list. 
 
-   ![Screen Shot 2018-11-28 at 4.08.29 PM](/Users/mboxell/Desktop/CICD/Screen Shot 2018-11-28 at 4.08.29 PM.png)
+   ![Screen Shot 2018-11-28 at 4.08.29 PM](images/Screen%20Shot%202018-11-28%20at%204.08.29%20PM.png)
 
 5. On the next page Wercker will show the list of repositories in the GitHub account you connected in the previous step. Choose the forked repository, helidon-se-codeone-2018, from the dropdown menu and click **Next**. 
 
-   ![Screen Shot 2018-11-28 at 4.19.52 PM](/Users/mboxell/Desktop/CICD/Screen Shot 2018-11-28 at 4.19.52 PM.png)
+   ![Screen Shot 2018-11-28 at 4.19.52 PM](images/Screen%20Shot%202018-11-28%20at%204.19.52%20PM.png)
 
 6. Accept the deatult to check out the code and click **Next**. 
 
@@ -54,13 +54,13 @@ The following list shows the minimum versions:
 
    When done, click the **Run** tab. 
 
-   ![Screen Shot 2018-11-28 at 4.27.21 PM](/Users/mboxell/Desktop/CICD/Screen Shot 2018-11-28 at 4.27.21 PM.png)
+   ![Screen Shot 2018-11-28 at 4.27.21 PM](images/Screen%20Shot%202018-11-28%20at%204.27.21%20PM.png)
 
 2. Test that the application can be built and pushed to OCIR. Click the **trigger a build now** link at the bottom of the page. The build will run and will indicate whether or not it has run successfully. 
 
 3. Log into [Oracle Cloud Infrastructure](https://docs.us-phoenix-1.oraclecloud.com/Content/home.htm) and navigate to **Registry** under the **Developer **tab. If the build was successful, you will see a repository and application matching the information entered into Wercker. 
 
-   ![Screen Shot 2018-12-04 at 10.13.10 AM](/Users/mboxell/Desktop/CICD/Screen Shot 2018-12-04 at 10.13.10 AM.png)
+   ![Screen Shot 2018-12-04 at 10.13.10 AM](images/Screen%20Shot%202018-12-04%20at%2010.13.10%20AM.png)
 
 4. Under the **Actions** dropdown choose **Change to Public** to make your image deployable to OKE without configuring secrets.
 
@@ -73,7 +73,7 @@ The following list shows the minimum versions:
    - OKE_MASTER: `<server value from kubeconfig>`
    - OKE_TOKEN: `<token value from kubeconfig>` 
 
-   ![Screen Shot 2018-12-03 at 3.27.06 PM](/Users/mboxell/Desktop/CICD/Screen Shot 2018-12-03 at 3.27.06 PM.png)
+   ![Screen Shot 2018-12-03 at 3.27.06 PM](images/Screen%20Shot%202018-12-03%20at%203.27.06%20PM.png)
 
 2. Next you will have to add a new workflow to Wercker. Navigate to the **Workflows** tab and click **Add new pipeline**. 
 
@@ -81,11 +81,11 @@ The following list shows the minimum versions:
 
 4. Click the **Workflows** tab and in the workflow editor, click the ' **+** ', to create a new pipeline chain after the build. Select `deploy-to-kubernetes` for **Execute pipeline** and click **Add**.
 
-   ![Screen Shot 2018-12-03 at 3.30.29 PM](/Users/mboxell/Desktop/CICD/Screen Shot 2018-12-03 at 3.30.29 PM.png)
+   ![Screen Shot 2018-12-03 at 3.30.29 PM](images/Screen%20Shot%202018-12-03%20at%203.30.29%20PM.png)
 
 5. Switch to Wercker and click the **Runs** tab. You will see that the pipeline was executed automatically when the change was made in Github. After the build completes the deploy workflow runs. Click `deploy-to-kubernetes` to view the details. Scroll to the bottom to verify that all the steps completed successfully.
 
-   ![Screen Shot 2018-12-04 at 10.16.47 AM](/Users/mboxell/Desktop/CICD/Screen Shot 2018-12-04 at 10.16.47 AM.png)
+   ![Screen Shot 2018-12-04 at 10.16.47 AM](images/Screen%20Shot%202018-12-04%20at%2010.16.47%20AM.png)
 
 ## Verify the Deployment to Kubernetes was Successful 
 
@@ -104,7 +104,7 @@ The following list shows the minimum versions:
 
 3. Add the node of your cluster to your service endpoint to get the endpoint for your deployed Helidon quickstart-se application and paste that value into your browser. 
 
-   ![Screen Shot 2018-11-29 at 1.32.12 PM](/Users/mboxell/Desktop/CICD/Screen Shot 2018-11-29 at 1.32.12 PM.png)
+   ![Screen Shot 2018-11-29 at 1.32.12 PM](images/Screen%20Shot%202018-11-29%20at%201.32.12%20PM.png)
 
 ## Clean Up 
 
