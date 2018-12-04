@@ -28,7 +28,7 @@ The following list shows the minimum versions:
 
 2. Navigate to https://app.wercker.com/. Create an account if you do not already have one. 
 
-   ![Screen Shot 2018-11-28 at 4.08.19 PM](/Users/mboxell/Desktop/CICD/Screen Shot 2018-11-28 at 4.08.19 PM.png)
+   ![Screen Shot 2018-11-28 at 4.08.19 PM](images/Screen Shot 2018-11-28 at 4.08.19 PM.png)
 
 3. Click **Create your first application**. 
 
