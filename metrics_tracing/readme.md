@@ -154,14 +154,14 @@ curl -X POST -d '{"greeting" : "Howdy"}' http://localhost:8080/greet/slowgreetin
 
 
 
-##Deploy the Application to Kubernetes
+## Deploy the Application to Kubernetes
 
 After testing out Helidon, Prometheus, and Zipkin on your local Docker environment try deploying them to your Kubernetes cluster. If you don’t have access to a Kubernetes cluster, you can [install one on your desktop](https://helidon.io/docs/latest/#/getting-started/04_kubernetes). 
 
 1. Run the following commands to verify connectivity to your cluster: 
 
 ```
-kubectl cluster-info                # Verify which cluster
+kubectl cluster-info                # Verify which cluster you are connecting to 
 kubectl get pods                    # Verify connectivity to cluster
 ```
 
@@ -256,7 +256,7 @@ helm delete prometheus
 3. And remove Zipkin from Kubernetes by changing directories to the one into which you cloned our Zipkin yaml file and entering: 
 
 ```
-kubectl create -f zipkin_yaml.yaml
+kubectl delete -f zipkin_yaml.yaml
 ```
 
 
