@@ -256,7 +256,7 @@ helm delete prometheus
 3. And remove Zipkin from Kubernetes by changing directories to the one into which you cloned our Zipkin yaml file and entering: 
 
 ```
-kubectl delete -f zipkin_yaml.yaml
+kubectl delete -f zipkin.yaml
 ```
 
 
