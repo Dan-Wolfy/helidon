@@ -66,7 +66,7 @@ docker build -t quickstart-se target
 
 ## Deploy the Application to Kubernetes. 
 
-If you don’t have access to a Kubernetes cluster, you can [install one on your desktop](https://helidon.io/docs/latest/#/getting-started/04_kubernetes). Then deploy the example. 
+[Install Kubernetes on your desktop](https://helidon.io/docs/latest/#/getting-started/04_kubernetes). Then deploy the example. 
 
 1. Verify connectivity to cluster: 
 
