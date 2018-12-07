@@ -58,7 +58,7 @@ The following list shows the minimum versions:
 
 2. Test that the application can be built and pushed to OCIR. Click the **trigger a build now** link at the bottom of the page. The build will run and will indicate whether or not it has run successfully. 
 
-3. Log into [Oracle Cloud Infrastructure](https://docs.us-phoenix-1.oraclecloud.com/Content/home.htm) and navigate to **Registry** under the **Developer **tab. If the build was successful, you will see a repository and application matching the information entered into Wercker. 
+3. Log into [Oracle Cloud Infrastructure](https://docs.us-phoenix-1.oraclecloud.com/Content/home.htm) and navigate to **Registry** under the **Developer** tab. If the build was successful, you will see a repository and application matching the information entered into Wercker. 
 
    ![Screen Shot 2018-12-04 at 10.13.10 AM](images/Screen%20Shot%202018-12-04%20at%2010.13.10%20AM.png)
 
