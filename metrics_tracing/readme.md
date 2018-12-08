@@ -210,8 +210,6 @@ kubectl --namespace default port-forward $POD_NAME 9090
 
 3. Once Prometheus is runnining access the console (e.g. `localhost:9090/graph`) and click `Graph`. Enter `application:accessctr` then click `Execute`. You should see the graph plotting the application's `accessctr` metric. Exercise the application some more using the curl commands that were described earlier. Click `Execute` again and you should see the counter increase.
 
-
-
 ## Kubernetes Traces: Downloading and Running Zipkin on Kubernetes
 
 1. To install Zipkin enter:
