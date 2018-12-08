@@ -197,21 +197,7 @@ kubectl get service quickstart-se  # Get service info
 helm install stable/prometheus -n prometheus
 ```
 
-2. To allow Prometheus to scrape metrics from your Heldion quickstart-se application you will have to modify the service information. Enter: 
-
-```
-kubectl edit svc prometheus-server
-```
-
-3. Under `metadata` add the following: 
-
-```
-annotations:
-    prometheus.io/scrape: "true"
-    prometheus.io/port: "9102"
-```
-
-4. Get the Prometheus server URL by running these commands in the same shell:
+2. Get the Prometheus server URL by running these commands in the same shell:
 
 ```
 export POD_NAME=$(kubectl get pods --namespace default -l "app=prometheus,component=server" -o jsonpath="{.items[0].metadata.name}")
@@ -221,16 +207,16 @@ export POD_NAME=$(kubectl get pods --namespace default -l "app=prometheus,compon
 kubectl --namespace default port-forward $POD_NAME 9090
 ```
 
-5. Once Prometheus is runnining access the console (e.g. `localhost:9090/graph`) and click `Graph`. Enter `application:accessctr` then click `Execute`. You should see the graph plotting the application's `accessctr` metric. Exercise the application some more using the curl commands that were described earlier. Click `Execute` again and you should see the counter increase.
+3. Once Prometheus is runnining access the console (e.g. `localhost:9090/graph`) and click `Graph`. Enter `application:accessctr` then click `Execute`. You should see the graph plotting the application's `accessctr` metric. Exercise the application some more using the curl commands that were described earlier. Click `Execute` again and you should see the counter increase.
 
 
 
 ## Kubernetes Traces: Downloading and Running Zipkin on Kubernetes
 
-1. Clone our example Zipkin yaml file to a local directory and change to that directory. To install Zipkin enter: 
+1. To install Zipkin enter:
 
 ```
-kubectl create -f zipkin.yaml
+kubectl create -f https://raw.githubusercontent.com/mickeyboxell/helidon/master/metrics_tracing/zipkin.yaml
 ```
 
 This will install Zipkin on your cluster with the NodePort of 31001 and the port of 9411. 
