@@ -31,11 +31,7 @@ The following list shows the minimum versions:
 git clone https://github.com/mickeyboxell/helidon
 ```
 
-2. Change into the helidon-se-codeone-2018 directory: 
-
-```
-cd helidon-se-codeone-2018
-```
+2. Change into the helidon-se-codeone-2018 directory
 
 3. Build the application with: 
 
