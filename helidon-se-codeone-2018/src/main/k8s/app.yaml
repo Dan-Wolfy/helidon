@@ -20,6 +20,9 @@ metadata:
   name: ${project.artifactId}
   labels:
     app: ${project.artifactId}
+  annotations:
+    prometheus.io/scrape: "true"
+    prometheus.io/port: "8080"
 spec:
   type: NodePort
   selector:
