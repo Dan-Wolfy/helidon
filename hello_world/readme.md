@@ -52,17 +52,25 @@ cd quickstart-se
 mvn package
 ```
 
-4. The project builds an application jar for the example and saves all runtime dependencies in the target/libs directory. This means you can easily start the application by running the application jar file
+4. The project builds an application jar for the example and saves all runtime dependencies in the target/libs directory. This means you can easily start the application by running the application jar file: 
 
 ```
 java -jar target/quickstart-se.jar
 ```
+You can access the application	at http://localhost:8080
 
 5. The project also contains a Docker file so that you can easily build and run a docker image. Because the example’s runtime dependencies are already in target/libs, the Docker file is pretty simple (see target/Dockerfile). To build the Docker image, you need to have Docker installed and running on your system.
 
 ```
 docker build -t quickstart-se target
 ```
+
+6. If you would like to start the application with Docker run: 
+
+```
+docker run --rm -p 8080:8080 quickstart-se:latest
+```
+You can access the application	at http://localhost:8080
 
 ## Deploy the Application to Kubernetes. 
 
