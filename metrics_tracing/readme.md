@@ -217,6 +217,8 @@ This will install Zipkin on your cluster with the NodePort of 31001 and the port
 
 2. As mentioned before, the application has been instrumented to share tracing data. By default the application is configured to connect to zipkin at `http://localhost:9411`. This is configured in `application.yaml`. In this example your are deploying to a Kubernetes cluster. In `application.yaml` change the zipkin.endpoint to `zipkin.endpoint: "http://zipkin:9411"`. 
 
+Remember, you will have to re-package the application with `mvn package` and re-build the Docker image with `docker build -t quickstart-se target` everytime the application is modified. 
+
 3. Browse to http://localhost:9411 and choose "greet-service" from the list of available service names. Click "Find Traces" to see tracing data for the service. 
 
 ## Clean Up 
