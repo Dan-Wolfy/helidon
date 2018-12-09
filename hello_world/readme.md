@@ -94,10 +94,10 @@ kubectl proxy
 kubectl get service quickstart-se
 ```
 
-5. Note the PORTs. You can now connect to the application using the second port number (the NodePort) instead of 8080. For example:
+5. Note the ports. You can now connect to the application using the second port number (the NodePort) instead of 8080. For example:
 
 ```
-curl -X GET http://localhost:31431/greet
+http://localhost:31431/greet
 ```
 
 6. The example is a very simple "Hello World" greeting service. It supports GET requests for generating a greeting message, and a PUT request for changing the greeting itself. The response is encoded using JSON. For example:
