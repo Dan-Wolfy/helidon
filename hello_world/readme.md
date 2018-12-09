@@ -57,7 +57,23 @@ mvn package
 ```
 java -jar target/quickstart-se.jar
 ```
-You can access the application	at http://localhost:8080
+You can now access the application	at http://localhost:8080/greet
+
+The example is a very simple "Hello World" greeting service. It supports GET requests for generating a greeting message, and a PUT request for changing the greeting itself. The response is encoded using JSON. For example: 
+
+```
+curl -X GET http://localhost:31431/greet
+{"message":"Hello World!"}
+
+curl -X GET http://localhost:31431/greet/Joe
+{"message":"Hello Joe!"}
+
+curl -X PUT http://localhost:31431/greet/greeting/Hola
+{"greeting":"Hola"}
+
+curl -X GET http://localhost:31431/greet/Jose
+{"message":"Hola Jose!"}
+```
 
 5. The project also contains a Docker file so that you can easily build and run a docker image. Because the example’s runtime dependencies are already in target/libs, the Docker file is pretty simple (see target/Dockerfile). To build the Docker image, you need to have Docker installed and running on your system.
 
@@ -70,7 +86,7 @@ docker build -t quickstart-se target
 ```
 docker run --rm -p 8080:8080 quickstart-se:latest
 ```
-You can access the application	at http://localhost:8080
+You can access the application	at http://localhost:8080/greet
 
 ## Deploy the Application to Kubernetes. 
 
@@ -108,21 +124,6 @@ kubectl get service quickstart-se
 http://localhost:31431/greet
 ```
 
-6. The example is a very simple "Hello World" greeting service. It supports GET requests for generating a greeting message, and a PUT request for changing the greeting itself. The response is encoded using JSON. For example:
-
-```
-curl -X GET http://localhost:31431/greet
-{"message":"Hello World!"}
-
-curl -X GET http://localhost:31431/greet/Joe
-{"message":"Hello Joe!"}
-
-curl -X PUT http://localhost:31431/greet/greeting/Hola
-{"greeting":"Hola"}
-
-curl -X GET http://localhost:31431/greet/Jose
-{"message":"Hola Jose!"}
-```
 
 ## Clean Up 
 
