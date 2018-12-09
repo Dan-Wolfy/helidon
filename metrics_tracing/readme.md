@@ -96,9 +96,8 @@ curl -H 'Accept: text/plain' -X GET http://localhost:8080/metrics/
 
 ### Downloading and Running Prometheus on your Local Machine
 
-What use are metrics without a tool to consume them? 
-
-https://prometheus.io/docs/prometheus/latest/getting_started/
+What use are metrics without a tool to consume them? In this lab we will be using a tool called [Prometheus](
+https://prometheus.io/docs/prometheus/latest/getting_started/). 
 
 1. [Download the latest release](https://prometheus.io/download) of Prometheus for your platform, then extract and run it:
 
