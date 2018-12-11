@@ -48,7 +48,7 @@ The following list shows the minimum versions:
 
 1. In the **Environment** tab create each of the following environment variables and click **Add** after each one.
 
-   * Docker Username must include the `<tenancy name>/<username>`Docker Password is the `auth_token` for your cluster. Click **Protected** checkbox. NOTE: It must not contain a $ character.
+   * Docker Username must include the `<tenancy name>/<username>`Docker Password is the [authentication token](https://docs.cloud.oracle.com/iaas/Content/Registry/Tasks/registrygettingauthtoken.htm). Click **Protected** checkbox. NOTE: It must not contain a $ character.
    * Docker Repo must include `<region-code>.ocir.io/<tenancy name>/<registry name>`
    * Docker Username must include the `<tenancy name>/<username>`
 
