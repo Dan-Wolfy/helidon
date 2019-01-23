@@ -40,7 +40,7 @@ mvn archetype:generate -DinteractiveMode=false \
     -Dpackage=io.helidon.examples.quickstart.se
 ```
 
-2. change directories into the one created by the archetype:
+2. Change directories into the one created by the archetype:
 
 ```
 cd quickstart-se
@@ -51,6 +51,8 @@ cd quickstart-se
 ```
 mvn package
 ```
+
+This will create a /target directory containing both the .jar file of your application and a .yaml file. The .yaml makes the process for deploying Helidon on Kubernetes simple. After building a Docker image of our application and uploading it to the Registry service we will modify the .yaml with the address of the image in the repository in order to deploy it to Kubernetes. 
 
 4. The project builds an application jar for the example and saves all runtime dependencies in the target/libs directory. This means you can easily start the application by running the application jar file: 
 
